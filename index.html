@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <title>Annie's NMIX Portfolio</title>
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    </head>
+    <body class="bg-dark">
+        <div class="jumbotron jumbotron-fluid text-center bg-dark" style="margin-bottom:0; color:white">
+            <h1>New Media Production Portfolio</h1>
+            <h3>Annie Lim</h3> 
+        </div>  
+        <!-- Nav bar -->
+        <nav class="navbar navbar-expand-sm bg-danger navbar-dark justify-content-center sticky-top">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#4310">4310</a></li>
+            </ul>
+        </nav>
+        <div id="4310" class="container-fluid bg-white" style="padding: 4em">
+            <h2>NMIX 4310: Rich Media Production</h2>
+            <hr class="mt-2 mb-5">
+            <div class="row">
+                <div class="col-sm-8 my-auto">
+                    <h3>Midterm Project</h3>
+                    <p style="font-size: large">For my midterm project, I created a bookmark app that allows the user to save the links of their favorite websites in order to access them at another time. I used a Tableview to organize the links into a list and used a WebVew and segue to display the websites in a new screen. The items in the list can also deleted, as needed. I also learned how to save the data using the NSMutableData class.</p>
+                </div>
+                 <div class="col-sm-4">
+                     <img class="img-fluid" src="midterm.PNG" alt="bookmarks image">
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid bg-secondary" style="padding: 4em; color:#ffffff">
+            <h3>Final Project</h3>
+            <div class="row">
+                <div class="col-sm-7 embed-responsive embed-responsive-16by9">
+                    <iframe style="border: hidden" class="embed-responsive-item" width="650" height="380" src="https://www.youtube.com/embed/NukpMhhEbCk" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="col-sm-5 my-auto">
+                    <p style="font-size: large">My final project is a simplified web browser that incoprated the bookmark from the midterm. I used a WebView and set Google as the home page by default and a TextView to create the URL bar. Furthermore, I added a tab bar with four icons connected to four functions: back arrow and forward arrow to traverse through the navigation history, refresh, and bookmark. In addition, when the user opens the bookmarks, the URL of the website currenly being displayed is automatically pasted into the url textview.</p>
+                </div>
+            </div>
+        </div>
+        <br>
+        <footer class="text-center text-white">
+            <p>Written by Annie Lim and styled with Bootstrap.</p>
+        </footer>
+    </body>
+</html>
