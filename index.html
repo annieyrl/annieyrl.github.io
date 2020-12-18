@@ -67,13 +67,25 @@
             </div>
         </div>
         <div class="container-fluid bg-secondary" style="padding: 4em; color:#ffffff">
-            <h3>Final Project</h3>
+            <h3>Data Science I - Final Project</h3>
             <div class="row">
                 <div class="col-sm-7 embed-responsive embed-responsive-16by9">
-                    <iframe style="border: hidden" class="embed-responsive-item" width="650" height="380" src="https://www.youtube.com/embed/NukpMhhEbCk" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <figure>
+                        <img class="img-fluid" src="train_cm.PNG" alt="confusion matrix on training dataset">
+                        <figcaption>Confusion matrix on the training dataset.</figcaption>
+                    </figure>
+                    <figure>    
+                        <img class="img-fluid" src="test_cm.PNG" alt="confusion matrix on test dataset">
+                        <figcaption>Confusion matrix on the test dataset.</figcaption>
+                    </figure>
                 </div>
                 <div class="col-sm-5 my-auto">
-                    <p style="font-size: large"></p>
+                    <p style="font-size: large">In a team of 4, we used machine learning to see if we can predict the winner of a chess game based on certain features
+                    such as the difference in player ratings, whether or not the game affected a player's rating, and the type of opening that was played. We created a Decision Tree model,
+                    a Logistic Regression model, a KNN model, and a Naive Bayes model to classify the winner. I specifically worked on the Naive Bayes model, and I used a combination
+                    of Bernoulli, Gaussian, and Categorical Naive Bayes models to compute the results. I was able to do this because we can assume that the features are conditionally 
+                    independent. The two diagrams above show the proportions of predictions made on the training dataset and the test dataset.
+                    </p>
                 </div>
             </div>
         </div>
