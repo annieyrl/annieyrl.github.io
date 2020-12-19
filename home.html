@@ -41,7 +41,8 @@
             <div class="row">
                 <div class="col-sm-8 my-auto">
                     <p style="font-size: large">Hello! My name is Ye Lim, but I also go by Annie. I am a student at the University of Georgia pursuing a Bachelor's Degree in 
-                    Computer Science with an emphasis on cybersecurity and certificates in New Media and Applied Data Science. I like exploring new areas in computer science. So far, I've ventured to cloud computing, cybersecurity, machine learning, computer network, and 
+                    Computer Science with an emphasis on cybersecurity and certificates in New Media and Applied Data Science. I like exploring new areas in computer science. 
+                    So far, I've ventured to software engineering, cloud computing, cybersecurity, machine learning, computer network, and 
                     mobile development. I also like solving puzzles, and I'm good at working with small details. Currently, I am learning the basics of cooking and made my
                     first macaroni and cheese from scratch (excluding the pasta)!</p>
                 </div>
@@ -52,23 +53,16 @@
         <div id="4310" class="container-bg" style="padding: 4em; background-color:#adb3b8">
             <h2>My favorite projects and assignments</h2>
             <hr class="mt-2 mb-5">
-            <div class="row">
-                <div class="col-sm-8 my-auto">
-                    <h3>Face Recognition</h3>
-                    <p style="font-size: large">For this assignment, I had to reconstruct faces in a collection of face images by using the Eigenface algorithm, which
-                        utilizes the high correlation between face images. In short, I had to center the dataset of face images and perform Principle Component Analysis through
-                        Singular Value Decomposition. This is important because the process significantly reduces the computation time that is need to analyze an image with 
-                        hundreds of pixels. The result and the centered dataset are used to generate reconstructed face images. The left image displays an example of this process.             
-                    </p>
-                </div>
-                 <div class="col-sm-4">
-                     <img class="img-fluid" src="facial_reconstruction.PNG" alt="comparison of the original Jennifer Lopez image and reconstructed image">
-                </div>
-            </div>
-        </div>
-        <div class="container-fluid bg-secondary" style="padding: 4em; color:#ffffff">
             <h3>Data Science I - Final Project</h3>
             <div class="row">
+                <div class="col-sm-6 my-auto">
+                    <p style="font-size: large">In a team of 4, we used machine learning to see if we can predict the winner of a chess game based on certain features
+                    such as the difference in player ratings, whether or not the game affected a player's rating, and the type of opening that was played. We created a Decision Tree model,
+                    a Logistic Regression model, a KNN model, and a Naive Bayes model to classify the winner. I specifically worked on the Naive Bayes model, and I used a combination
+                    of Bernoulli, Gaussian, and Categorical Naive Bayes models to compute the results. I was able to do this because we can assume that the features are conditionally 
+                    independent. The two diagrams above show the proportions of predictions made on the training dataset and the test dataset.
+                    </p>
+                </div>
                 <div class="col-sm-3">
                     <figure>
                         <img class="img-fluid" src="train_cm.png" alt="confusion matrix on training dataset">
@@ -81,13 +75,51 @@
                         <figcaption>Confusion matrix on the test dataset.</figcaption>
                     </figure>
                 </div>
-                <div class="col-sm-6 my-auto">
-                    <p style="font-size: large">In a team of 4, we used machine learning to see if we can predict the winner of a chess game based on certain features
-                    such as the difference in player ratings, whether or not the game affected a player's rating, and the type of opening that was played. We created a Decision Tree model,
-                    a Logistic Regression model, a KNN model, and a Naive Bayes model to classify the winner. I specifically worked on the Naive Bayes model, and I used a combination
-                    of Bernoulli, Gaussian, and Categorical Naive Bayes models to compute the results. I was able to do this because we can assume that the features are conditionally 
-                    independent. The two diagrams above show the proportions of predictions made on the training dataset and the test dataset.
+            </div>
+        </div>
+        <div class="container-fluid bg-secondary" style="padding: 4em; color:#ffffff">
+            <div class="row">
+                <div class="col-sm-4">
+                    <img class="img-fluid" src="facial_reconstruction.PNG" alt="comparison of the original Jennifer Lopez image and reconstructed image">
+                </div>
+                <div class="col-sm-8 my-auto">
+                    <h3>Face Recognition</h3>
+                    <p style="font-size: large">For this assignment, I had to reconstruct faces in a collection of face images by using the Eigenface algorithm, which
+                        utilizes the high correlation between face images. In short, I had to center the dataset of face images and perform Principle Component Analysis through
+                        Singular Value Decomposition. This is important because the process significantly reduces the computation time that is need to analyze an image with 
+                        hundreds of pixels. The result and the centered dataset are used to generate reconstructed face images. The left image displays an example of this process.             
                     </p>
+                </div>
+            </div>
+        </div>
+        <div id="4310" class="container-fluid bg-white" style="padding: 4em">
+            <div class="row">
+                <div class="col-sm-12 my-auto">
+                    <h3>Capture The Flag</h3>
+                    <p style="font-size: large">Given a simple .elf file, I had to find the password to unlock a special message. My first step involved looking for any interesting static
+                        strings in the file, and luckily, I found the word "Bingo!" I assumed that this key word was related to finding the password. Using this word and a 
+                        python binary analysis framework called angr, I wrote a program that was able to explore all of the possible paths and return the user input that lead 
+                        to the branch containing "Bingo!" to the console.</p>
+                     <img class="img-fluid" src="CTF1.png" alt="password">
+                     <p>From here, I enetered the password to see the secret message.</p>
+                     <img class="img-fluid" src="CTF2.png" alt="secret message">
+                </div>
+            </div>
+        </div>
+        <div id="4310" class="container-bg" style="padding: 4em; background-color:#adb3b8">
+            <h3>Autograder</h3>
+            <div class="row">
+                <div class="col-sm-6 my-auto">
+                    <p style="font-size: large">For this assignment, I designed and implemented a cloud-based, scalable auto-grader system for introductory programming courses using
+                        Amazon Web Service's PaaS support called Elastic Beanstalk to run Docker containers. Specifically, the autograder checks for the accuracy of a submitted
+                        c++ program that prompts the user for two names then prints out a sentence that says these two people went on a walk together. To create the autograder,
+                        I had to prepare the right environment on a Virtual Machine. Next, I used Python and Flask, a web application framework, to allow users to upload files, grade
+                        the submissions, and display the results back to the user. Then, I moved these capabilities to Docker containers. I also had to open some ports to allow communication betweeen network layers, SSH, and Docker.
+                    </p>
+                </div>
+                <div class="col-sm-6">
+                    <img class="img-fluid" src="autograder.png" alt="autograder web page"><br>
+                    <img class="img-fluid" src="graderesults.png" alt="sample submission results">
                 </div>
             </div>
         </div>
