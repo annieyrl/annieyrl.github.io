@@ -106,5 +106,22 @@
                 </div>
             </div>
         </div>
+        <div id="4310" class="container-bg" style="padding: 4em; background-color:#adb3b8">
+            <h3>Autograder</h3>
+            <div class="row">
+                <div class="col-sm-6 my-auto">
+                    <p style="font-size: large">For this assignment, I designed and implemented a cloud-based, scalable auto-grader system for introductory programming courses using
+                        Amazon Web Service's PaaS support called Elastic Beanstalk to run Docker containers. Specifically, the autograder checks for the accuracy of a submitted
+                        c++ program that prompts the user for two names then prints out a sentence that says these two people went on a walk together. To create the autograder,
+                        I had to prepare the right environment on a Virtual Machine. Next, I used Python and Flask, a web application framework, to allow users to upload files, grade
+                        the submissions, and display the results back to the user. Then, I moved these capabilities to Docker containers. I also had to open some ports to allow communication betweeen network layers, SSH, and Docker.
+                    </p>
+                </div>
+                <div class="col-sm-6">
+                    <img class="img-fluid" src="autograder.png" alt="autograder web page">
+                    <img class="img-fluid" src="graderesults.png" alt="sample submission results">
+                </div>
+            </div>
+        </div>
     </body>
 </html>
